@@ -4,8 +4,8 @@ function getFirstSelector(selector){
 }
 
 function nestedTarget(nested, target){
-  let nest = document.querySelector(nested);
-  return nest.querySelector(target);
+  let nest = document.querySelector("#"+nested);
+  return nest.querySelector("."+target);
 }
 
 function increaseRankBy(n){
